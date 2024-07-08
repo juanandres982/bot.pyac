@@ -24,12 +24,21 @@ async def repeat(ctx, arg):
 
 @bot.command()
 async def chess(ctx):
-    await ctx.send(f'tengo bastantes funciones si quieres aprender un poco de ajedres  apreta 1 para aprender el mejor inicio y 2 para saber como se mueve cada pieza del tablero {bot.user}!')
+    await ctx.send(f'tengo bastantes funciones si quieres aprender un poco de ajedres  apreta chess_1 para aprender el mejor inicio y chess_2 para saber como se mueve cada pieza del tablero {bot.user}!')
 
 @bot.command()
 async def test(ctx, *args):
     arguments = ', '.join(args)
     await ctx.send(f'{len(args)} arguments: {arguments}')
 
+@bot.command()
+async def chess_1(ctx):
+    await ctx.send("la que mejor le ofrecemos es de mover el primer peon en e4 y ahi mover el caballo en c3")
 
-bot.run("MTI1NTMxNzgzMjkxMzEyOTUwMg.GCyNcg.Jtk6OYOviu6n-lW53NrzbpPleoYPFhA3XCnzc0")
+@bot.command()
+async def chess_2(ctx):
+    await ctx.send("peon se mueve hacia delante y diagonal solo 1 torre se mueve en adelante y costados sin excepcion los caballos se mueven en l adelante y atras tambien puede pasar todas las demas fichas sacerdote se mueven en todas las diagonales  reina todas las anteriores y rey en todas las casillas a su alrededor")
+
+
+
+bot.run("MTI1NTMxNzgzMjkxMzEyOTUwMg.GEi42p.U60Oq5H6qEudkuO0lQa7ASHZgvtOqjedqfqZRs")
